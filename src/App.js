@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
             <Routes>
-              <Route path={`${process.env.PUBLIC_URL + '/swap-tokens'}`}  element={<Swap />}/>
+              <Route path={`${process.env.PUBLIC_URL + '/swap'}`}  element={<Swap />}/>
             </Routes>
     </Router>
   );
