@@ -54,9 +54,8 @@ function Swap() {
     let amount2 = 1000000;
 
     const params = {
-        sellToken: "0xdc31Ee1784292379Fbb2964b3B9C4124D8F89C60",
-        //sellToken: "0xE68104D83e647b7c1C15a91a8D8aAD21a51B3B3E",
-        buyToken: "0x5FfbaC75EFc9547FBc822166feD19B05Cd5890bb",
+        sellToken: fromToken.address,
+        buyToken: toToken.address,
         sellAmount: amount2,
         takerAddress: account,
     }
