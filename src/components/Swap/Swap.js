@@ -5,7 +5,7 @@ import Web3 from 'web3';
 import CircularJSON from 'circular-json';
 import qs from 'qs';
 
-function MyComponent() {
+function Swap() {
   const [tokens, setTokens] = useState([]);
   const [fromToken, setFromToken] = useState({});
   const [toToken, setToToken] = useState({});
@@ -218,4 +218,4 @@ function MyComponent() {
   );
 }
 
-export default MyComponent;
+export default Swap;
