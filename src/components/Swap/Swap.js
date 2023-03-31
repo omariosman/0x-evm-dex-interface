@@ -81,12 +81,9 @@ function MyComponent() {
     let takerAddress = accounts[0];
     console.log("takerAddress: ", takerAddress);
 
-    try {
-        const swapQuoteJSON = await getQuote(takerAddress);
-    } catch(error) {
-        console.log(`Error: ${error}`);
-    }
-/*
+    const swapQuoteJSON = await getQuote(takerAddress);
+
+
     // Set Token Allowance
     // Set up approval amount
     const fromTokenAddress = fromToken.address;
@@ -114,7 +111,7 @@ function MyComponent() {
     // Perform the swap
     const receipt = await web3.eth.sendTransaction(swapQuoteJSON);
     console.log("receipt: ", receipt);
-    */
+    
   };
 
   const swapTokens = () => {
